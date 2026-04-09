@@ -10,17 +10,28 @@ namespace MyClasses
         public string Name { get; set; }
         public int Health { get; set; }
         public List<Item> Inventory { get; set; }
-        public int CompetitorsBeaten { get; set; }
         public int Gold { get; set; }
-        public int Prestige { get; set; }
+        public int Ranking { get; set; }
 
         public Character(string name)
         {
             this.Name = name;
             Inventory = new List<Item>();
-            CompetitorsBeaten = 0;
             Gold = 0;
-            Prestige = 0;
+            Ranking = 0;
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"Name: {this.Name}");
+            Console.WriteLine($"Health: {this.Health}");
+            Console.WriteLine($"Gold: {this.Gold}");
+            Console.WriteLine($"Ranking: {this.Ranking}/10");
+            Console.WriteLine("Inventory:\n");
+            foreach (var item in Inventory)
+            {
+                Console.WriteLine($"{item.Name} ---- {item.Description} ---- {item.Damage}");
+            }
         }
 
     }

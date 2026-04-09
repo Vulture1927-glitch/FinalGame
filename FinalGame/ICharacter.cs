@@ -9,5 +9,7 @@ namespace MyInterfaces
         public string Name { get; set; }
         public int Health { get; set; }
         List<Item> Inventory { get; set; }
+
+        public void Display();
     }
 }
