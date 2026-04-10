@@ -32,6 +32,7 @@ namespace MyClasses
             {
                 Console.WriteLine($"{item.Name} ---- {item.Description} ---- {item.Damage}");
             }
+            
         }
 
     }
