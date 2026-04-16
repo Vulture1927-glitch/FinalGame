@@ -11,5 +11,8 @@ namespace MyClasses
         public string Description { get; set; }
         //Only needed for weapons
         public int Damage { get; set; }
+        public int Cost { get; set; }
+        //Only implement if time allows
+        //public int Protection { get; set; }
     }
 }

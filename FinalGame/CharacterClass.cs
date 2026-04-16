@@ -5,7 +5,7 @@ using MyInterfaces;
 using MyClasses;
 namespace MyClasses
 {
-    internal class Character : ICharacter
+    internal class Character : ICharacter , IFight
     {
         public string Name { get; set; }
         public int Health { get; set; }
@@ -33,6 +33,23 @@ namespace MyClasses
                 Console.WriteLine($"{item.Name} ---- {item.Description} ---- {item.Damage}");
             }
             
+        }
+        public int Attack(Item weapon)
+        {
+            Console.WriteLine("Fast attack or slow attack?");
+            string response = Console.ReadLine().Trim().ToLower();
+            if(response == "fast")
+            {
+                Console.WriteLine("You attack first");
+                Console.WriteLine($"You dealt {weapon.Damage -2} damage");
+                return weapon.Damage - 2;
+            }
+            else if (response == "slow")
+            {
+                Console.WriteLine("You attack slower");
+                return weapon.Damage + 3;
+            }
+            throw new Exception("Not a valid response");
         }
 
     }
