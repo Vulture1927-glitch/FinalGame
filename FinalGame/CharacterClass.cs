@@ -14,8 +14,9 @@ namespace MyClasses
         public int Ranking { get; set; }
         public string BattleClass { get; set; }
         public int Luck { get; set; }
+        public int Level { get; set; }
 
-        public Character(string name, string battleClass)
+        public Character(string name = "None", string battleClass = "None")
         {
             this.Name = name;
             Inventory = new List<Item>();
@@ -45,6 +46,8 @@ namespace MyClasses
             Console.WriteLine($"Health: {this.Health}");
             Console.WriteLine($"Gold: {this.Gold}");
             Console.WriteLine($"Ranking: {this.Ranking}/8");
+            Console.WriteLine($"Class: {this.BattleClass}");
+            Console.WriteLine($"Level: {this.Level}");
             Console.WriteLine("Inventory:\n");
             foreach (var item in Inventory)
             {
@@ -99,6 +102,14 @@ namespace MyClasses
                     Console.WriteLine("No class chosen");
                     break;
             }
+        }
+
+        public void LevelUp()
+        {
+            Random rng = new Random();
+            Health += rng.Next(10, 26);
+            Luck += rng.Next(1, 3);
+            Level++;
         }
 
     }
