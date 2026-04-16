@@ -44,7 +44,7 @@ namespace MyClasses
             Console.WriteLine($"Name: {this.Name}");
             Console.WriteLine($"Health: {this.Health}");
             Console.WriteLine($"Gold: {this.Gold}");
-            Console.WriteLine($"Ranking: {this.Ranking}/10");
+            Console.WriteLine($"Ranking: {this.Ranking}/8");
             Console.WriteLine("Inventory:\n");
             foreach (var item in Inventory)
             {
