@@ -85,11 +85,11 @@ namespace MyClasses
                     Inventory.Add(ironArmor);
                     Inventory.Add(potion);
                     break;
-                case "Mage":
-                    Inventory.Add(staff);
-                    Inventory.Add(spellbook);
-                    Inventory.Add(potion);
-                    break;
+                //case "Mage":
+                //    Inventory.Add(staff);
+                //    Inventory.Add(spellbook);
+                //    Inventory.Add(potion);
+                //    break;
                 case "Rogue":
                     Inventory.Add(dagger);
                     Inventory.Add(leatherArmor);
