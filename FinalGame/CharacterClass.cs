@@ -20,7 +20,7 @@ namespace MyClasses
             this.Name = name;
             Inventory = new List<Item>();
             Gold = 0;
-            Ranking = 0;
+            Ranking = 1;
             BattleClass = battleClass;
             if(battleClass == "warrior")
             {
