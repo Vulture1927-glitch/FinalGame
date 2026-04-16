@@ -76,5 +76,18 @@ namespace MyClasses
                 Console.WriteLine("You cannot but this item");
             }
         }
+        public void SellItem(Character hero, Item itemToRemove)
+        {
+            try
+            {
+            hero.Inventory.Remove(itemToRemove);
+            Console.WriteLine($"Removed {itemToRemove}");
+            }
+            catch
+            {
+                Console.WriteLine("That is not in your inventory");
+            }
+
+        }
     }
 }

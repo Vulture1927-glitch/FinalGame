@@ -12,13 +12,31 @@ namespace MyClasses
         public List<Item> Inventory { get; set; }
         public int Gold { get; set; }
         public int Ranking { get; set; }
+        public string BattleClass { get; set; }
+        public int Luck { get; set; }
 
-        public Character(string name)
+        public Character(string name, string battleClass)
         {
             this.Name = name;
             Inventory = new List<Item>();
             Gold = 0;
             Ranking = 0;
+            BattleClass = battleClass;
+            if(battleClass == "warrior")
+            {
+                Health = 200;
+                Luck = 1;
+            }
+            else if(battleClass == "mage")
+            {
+                Health = 100;
+                Luck = 1;
+            }
+            else if(BattleClass == "rogue")
+            {
+                Health = 150;
+                Luck = 3;
+            }
         }
 
         public void Display()
@@ -50,6 +68,37 @@ namespace MyClasses
                 return weapon.Damage + 3;
             }
             throw new Exception("Not a valid response");
+        }
+        public void StartingItems()
+        {
+            Item sword = new Item();
+            Item staff = new Item();
+            Item dagger = new Item();
+            Item potion = new Item();
+            Item ironArmor = new Item();
+            Item leatherArmor = new Item();
+            Item spellbook = new Item();
+            switch(BattleClass)
+            {
+                case "Warrior":
+                    Inventory.Add(sword);
+                    Inventory.Add(ironArmor);
+                    Inventory.Add(potion);
+                    break;
+                case "Mage":
+                    Inventory.Add(staff);
+                    Inventory.Add(spellbook);
+                    Inventory.Add(potion);
+                    break;
+                case "Rogue":
+                    Inventory.Add(dagger);
+                    Inventory.Add(leatherArmor);
+                    Inventory.Add(potion);
+                    break;
+                default:
+                    Console.WriteLine("No class chosen");
+                    break;
+            }
         }
 
     }
