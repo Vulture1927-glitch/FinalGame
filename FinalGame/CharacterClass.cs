@@ -74,13 +74,13 @@ namespace MyClasses
         }
         public void StartingItems()
         {
-            Item sword = new Item();
-            Item staff = new Item();
-            Item dagger = new Item();
-            Item potion = new Item();
-            Item ironArmor = new Item();
-            Item leatherArmor = new Item();
-            Item spellbook = new Item();
+            Item sword = new Item("Sword", "A trusty weapon", 4 , 0);
+            Item staff = new Item("Staff", "A means to channel magic", 2 , 0);
+            Item dagger = new Item("Dagger", "A weapon good for close quarters", 3 , 0);
+            Item potion = new Item("Healing Potion", "Restores some Health", 0 , 0);
+            Item ironArmor = new Item("Iron armor", "Armor", 0 , 0 );
+            Item leatherArmor = new Item("Leather armor", "For those more nimble", 0, 0);
+            Item spellbook = new Item("Spellbook","Gifted to every wizard who graduated", 0 , 0);
             switch(BattleClass)
             {
                 case "Warrior":

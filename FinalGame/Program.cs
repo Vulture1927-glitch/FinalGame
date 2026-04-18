@@ -17,17 +17,19 @@ public class Program
         while (true)
         {
             Console.WriteLine($"Choose {name}'s class (type the number)\n" +
-                $"1.Warrior" +
+                $"1.Warrior\n" +
                 $"2.Rogue");
             string chosenClass = Console.ReadLine();
             if (chosenClass == "1")
             {
                 hero.BattleClass = "Warrior";
+                hero.StartingItems();
                 break;
             }
             if (chosenClass == "2")
             {
                 hero.BattleClass = "Rogue";
+                hero.StartingItems();
                 break;
             }
             else

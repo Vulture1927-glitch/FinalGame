@@ -1,3 +1,29 @@
 {
-
+  "Name": "Isaac",
+  "Health": 0,
+  "Inventory": [
+    {
+      "Name": null,
+      "Description": null,
+      "Damage": 0,
+      "Cost": 0
+    },
+    {
+      "Name": null,
+      "Description": null,
+      "Damage": 0,
+      "Cost": 0
+    },
+    {
+      "Name": null,
+      "Description": null,
+      "Damage": 0,
+      "Cost": 0
+    }
+  ],
+  "Gold": 0,
+  "Ranking": 1,
+  "BattleClass": "Rogue",
+  "Luck": 0,
+  "Level": 0
 }

@@ -14,5 +14,12 @@ namespace MyClasses
         public int Cost { get; set; }
         //Only implement if time allows
         //public int Protection { get; set; }
+        public Item(string name, string description, int damage, int cost)
+        {
+            Name = name;
+            Description = description;
+            Damage = damage;
+            Cost = cost;
+        }
     }
 }
