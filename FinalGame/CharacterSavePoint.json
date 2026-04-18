@@ -1,29 +1,29 @@
 {
   "Name": "Isaac",
-  "Health": 0,
+  "Health": 200,
   "Inventory": [
     {
-      "Name": null,
-      "Description": null,
+      "Name": "Sword",
+      "Description": "A trusty weapon",
+      "Damage": 4,
+      "Cost": 0
+    },
+    {
+      "Name": "Iron armor",
+      "Description": "Armor",
       "Damage": 0,
       "Cost": 0
     },
     {
-      "Name": null,
-      "Description": null,
-      "Damage": 0,
-      "Cost": 0
-    },
-    {
-      "Name": null,
-      "Description": null,
+      "Name": "Healing Potion",
+      "Description": "Restores some Health",
       "Damage": 0,
       "Cost": 0
     }
   ],
   "Gold": 0,
   "Ranking": 1,
-  "BattleClass": "Rogue",
-  "Luck": 0,
+  "BattleClass": "Warrior",
+  "Luck": 1,
   "Level": 0
 }

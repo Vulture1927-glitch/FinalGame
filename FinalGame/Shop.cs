@@ -15,19 +15,19 @@ namespace MyClasses
             Stock = new List<Item>();
             PriceToUpgrade = 10;
 
-            Item starting1 = new Item();
-            starting1.Name = "Sword";
-            starting1.Description = "Weapon";
-            starting1.Damage = 5;
-            starting1.Cost = 10;
+            Item starting1 = new Item("Sword", "Weapon", 5 , 10);
+            //starting1.Name = "Sword";
+            //starting1.Description = "Weapon";
+            //starting1.Damage = 5;
+            //starting1.Cost = 10;
 
-            Item starting2 = new Item();
+            Item starting2 = new Item("Iron armor", "Armor", 0, 10);
             starting2.Name = "Iron Armor";
             starting2.Description = "Armor";
             starting2.Damage = 0;
             starting2.Cost = 10;
 
-            Item starting3 = new Item();
+            Item starting3 = new Item("Healing potion", "Support", 0, 2);
             starting3.Name = "Healing Potion";
             starting3.Description = "Support";
             starting3.Damage = 0;
