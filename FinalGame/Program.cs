@@ -52,8 +52,9 @@ public class Program
         hero.Display();
         SaveManager.Save(hero);
         Console.WriteLine("Game Saved");
-        Console.WriteLine("Your first fight begins!");
+        Console.WriteLine("Your fight begins!");
         tournamentManager.TournamentRound(hero);
+        hero.Attack();
          
     }
 }

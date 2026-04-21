@@ -122,7 +122,7 @@ namespace MyClasses
     {
         public Slime()
         {
-            Name = "Sline";
+            Name = "Slime";
             Health = 10;
             Damage = 2;
             Species = Enemy.Slime;

@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="FinalGame/FinalGame.csproj" />
+  <Project Path="Linq_LambdaDemo/Linq_LambdaDemo.csproj" Id="ba97a7d3-ef72-4cab-9567-b386c0afc99b" />
+  <Project Path="Linq_Lambdas_AsyncDemonstartion/AsyncDemo.csproj" Id="dabffda1-779b-48b7-b910-5620d0b71694" />
 </Solution>
