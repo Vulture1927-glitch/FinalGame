@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="DateTimeDemo/DateTimeDemo.csproj" Id="97ed8ede-39d1-410c-8458-b98fa93fb9c4" />
   <Project Path="FinalGame/FinalGame.csproj" />
   <Project Path="Linq_LambdaDemo/Linq_LambdaDemo.csproj" Id="ba97a7d3-ef72-4cab-9567-b386c0afc99b" />
   <Project Path="Linq_Lambdas_AsyncDemonstartion/AsyncDemo.csproj" Id="dabffda1-779b-48b7-b910-5620d0b71694" />
